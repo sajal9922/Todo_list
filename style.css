@@ -65,10 +65,20 @@ body {
 .add-button:hover {
   background: #ce0a0a;
 }
+.error-message {
+  margin-top: 0.5;
+  font-size: 1.3rem;
+  text-align: center;
+  color: #ce0a0a;
+  text-transform: capitalize;
+}
+.list-container {
+  padding-left: 0;
+}
 ul li {
   list-style: none;
   font-size: 1.6rem;
-  padding: 1.2rem 0.8rem 1.2rem 5rem;
+  padding: 1.2rem 0.8rem 1.2rem 4rem;
   user-select: none;
   cursor: pointer;
   position: relative;
@@ -83,7 +93,7 @@ ul li::before {
   background-size: cover;
   background-position: center;
   top: 1.5rem;
-  left: 2rem;
+  left: 1rem;
 }
 
 ul li.checked {
@@ -92,4 +102,19 @@ ul li.checked {
 }
 ul li.checked::before {
   background-image: url(images/checked.png);
+}
+ul li span {
+  height: 3rem;
+  width: 3rem;
+  position: absolute;
+  right: 0;
+  font-size: 2rem;
+  line-height: 3rem;
+  border-radius: 50%;
+  text-align: center;
+  transition: all 0.3s;
+}
+ul li span:hover {
+  background: #f0eeee;
+  cursor: pointer;
 }
